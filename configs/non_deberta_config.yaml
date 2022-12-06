@@ -2,9 +2,9 @@ seed : 2022
 model_name : xlm-roberta-large
 kfold_name : "fold_k_5_seed_42"
 selected_folds : [0,1,2,3,4] 
-name : deberta-v3-large
-exp_name : "dv3l-mp--01"  
-checkpoints_path : checkpoint/deberta-v3-large/dv3l-mp--01'  
+name : xlm-roberta-large
+exp_name : "xlm-mp--01"  
+checkpoints_path : checkpoint/xlm-roberta-large/xlm-mp--01'  
 device : 0
 
 model:
