@@ -4,7 +4,7 @@
 # Models
 | order selected  | backbone      | cv score      |
 | -------------   | ------------- |-------------  |
-| 1	              | deberta-v3-large	0.447
+| 1	              | deberta-v3-large |	0.447     |
 | 2	              | deberta-v3-large-squad2	0.4524
 | 3	              | deberta-v3-large	0.4498
 | 4	              | deberta-large-mnli	0.4548
