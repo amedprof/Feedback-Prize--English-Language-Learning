@@ -1,0 +1,78 @@
+seed : 2022
+model_name : microsoft/deberta-v3-large
+kfold_name : "fold_k_5_seed_42"
+selected_folds : [0,1,2,3,4] 
+name : deberta-v3-large
+exp_name : dv3l-mp--01  
+checkpoints_path : checkpoint/deberta-v3-large/dv3l-mp--01  
+device : 0
+
+model:
+  target : ['cohesion', 'syntax', 'vocabulary', 'phraseology', 'grammar','conventions']
+  target_weights : [0.21,0.16,0.1,0.16,0.21,0.16]
+  max_len : 2048
+  max_len_eval : 2048
+  loss : FeedbackLoss
+  loss_reduction : mean
+  sub_loss : RMSELoss
+  sub_loss_param : 
+    reduction : none
+  pretrained_config : 
+  num_labels : 6
+  model_name : microsoft/deberta-v3-large
+  spans : ""
+  pooling_params :
+    pooling_name: MeanPooling
+    params : {}
+  spans_pooling_params :
+    pooling_name : AttentionHead
+    params : {}
+
+optimizer:
+  name : optim.AdamW
+  params : 
+    lr: 0.000004
+    betas: [0.9, 0.999]
+    eps: 0.000001
+    weight_decay: 0.01
+
+scheduler:
+  name: poly
+  params : 
+    lr_end: 0.0000007
+    power: 3
+  warmup: 0.04
+
+train_loader:
+  batch_size: 1
+  drop_last: true
+  num_workers: 16
+  pin_memory: false
+  shuffle: true
+
+val_loader:
+  batch_size: 1
+  drop_last: false
+  num_workers: 16
+  pin_memory: false
+  shuffle: false
+
+trainer:
+  use_amp: true
+  epochs: 4
+  sample: false
+  use_gradient_checkpointing: true
+  grad_clip: true
+  max_norm: 10
+
+callbacks:
+  save : true
+  es: false
+  patience: 0
+  verbose_eval: 1
+  epoch_pct_eval: 0.1
+  epoch_eval_dist: uniforme
+  metric_track: val_loss
+  mode: min
+  top_k: 1
+  start_eval_epoch : 0
