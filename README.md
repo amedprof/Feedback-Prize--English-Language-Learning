@@ -1,9 +1,9 @@
 # Feedback-Prize--English-Language-Learning
 3rd-Place-Solution for Feedback-Prize---English-Language-Learning.
 
-Competition Link: https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview
+Competition [Link](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview)
 
-The solution write-up is available on : https://www.kaggle.com/competitions/feedback-prize-english-language-learning/discussion/369609
+The solution write-up [Link](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/discussion/369609)
 
 # Models
 | order selected by Hill Climbing   | backbone      | cv score      |
@@ -34,15 +34,27 @@ The solution write-up is available on : https://www.kaggle.com/competitions/feed
 |24	              | deberta-v3-large	| 0.45 |
 
 # Install
-You should start by cloning the repository:
+Build docker image from **Dockerfile**
 
 # Data
-In order to run the code, you will need to download the competition data and extract it in the data folder.
+In order to run the code, you will need to download the competition data and extract it in the **data** folder.
 
 # Train models
 To run experiments : 
 
-# Inference
-Inference code is available on 
+For non deberta models :
+    1. you should change `model_name` in `configs/non_deberta_config.yaml` 
+    2. run `python train.py --config configs/non_deberta_config.yaml`
 
-# Code structure
+For deberta models :
+    1. you should change `model_name` in `configs/deberta_v3_large.yaml` 
+    2. run `python train.py --config configs/deberta_v3_large.yaml`
+
+For 2xPooling models:
+    1. you should use one of `configs/deberta-v3-large-2xpooling-paragraph.yaml` , `configs/deberta-v3-large-2xpooling-sentences.yaml` , `configs/deberta-v3-large-2xpooling-words.yaml`
+    2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
+# Inference
+To reproduce our final score, run this [code](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview) from kaggle kernels.
+
+# Hardware
+Models were trained using ZbyHP Z8 workstation with Ubuntu 20.04.1 LTS.
