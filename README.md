@@ -1,5 +1,9 @@
 # Feedback-Prize--English-Language-Learning
-3rd-Place-Solution for Feedback-Prize---English-Language-Learning
+3rd-Place-Solution for Feedback-Prize---English-Language-Learning.
+
+Competition Link: https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview
+
+The solution write-up is available on : https://www.kaggle.com/competitions/feedback-prize-english-language-learning/discussion/369609
 
 # Models
 | order selected by Hill Climbing   | backbone      | cv score      |
@@ -28,3 +32,17 @@
 | 22	             | deberta-v3-large	| 0.4512 |
 | 23	             | roberta-large	| 0.4571 |
 |24	              | deberta-v3-large	| 0.45 |
+
+# Install
+You should start by cloning the repository:
+
+# Data
+In order to run the code, you will need to download the competition data and extract it in the data folder.
+
+# Train models
+To run experiments : 
+
+# Inference
+Inference code is available on 
+
+# Code structure
