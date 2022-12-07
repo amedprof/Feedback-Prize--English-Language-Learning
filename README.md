@@ -43,16 +43,17 @@ In order to run the code, you will need to download the competition data and ext
 To run experiments : 
 
 For non deberta models :
-    1. you should change `model_name` in `configs/non_deberta_config.yaml` 
-    2. run `python train.py --config configs/non_deberta_config.yaml`
+ 1. you should change `model_name` in `configs/non_deberta_config.yaml` 
+ 2. run `python train.py --config configs/non_deberta_config.yaml`
 
 For deberta models :
-    1. you should change `model_name` in `configs/deberta_v3_large.yaml` 
-    2. run `python train.py --config configs/deberta_v3_large.yaml`
+
+ 1. you should change `model_name` in `configs/deberta_v3_large.yaml` 
+ 2. run `python train.py --config configs/deberta_v3_large.yaml`
 
 For 2xPooling models:
-    1. you should use one of `configs/deberta-v3-large-2xpooling-paragraph.yaml` , `configs/deberta-v3-large-2xpooling-sentences.yaml` , `configs/deberta-v3-large-2xpooling-words.yaml`
-    2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
+ 1. you should use one of `configs/deberta-v3-large-2xpooling-paragraph.yaml` , `configs/deberta-v3-large-2xpooling-sentences.yaml` , `configs/deberta-v3-large-2xpooling-words.yaml`
+ 2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
 # Inference
 To reproduce our final score, run this [code](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview) from kaggle kernels.
 
