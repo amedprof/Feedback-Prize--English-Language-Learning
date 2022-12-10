@@ -55,7 +55,7 @@ For 2xPooling models:
  1. you should use one of `configs/deberta-v3-large-2xpooling-paragraph.yaml` , `configs/deberta-v3-large-2xpooling-sentences.yaml` , `configs/deberta-v3-large-2xpooling-words.yaml`
  2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
 # Inference
-To reproduce our final score, run this [code](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/overview) from kaggle kernels.
+To reproduce our final score, run this [code](https://www.kaggle.com/code/cdeotte/new-cv-0-4420-24-models-no-pseudo-blend-w-c) from kaggle kernels.
 
 # Hardware
 Models were trained using ZbyHP Z8 workstation with Ubuntu 20.04.1 LTS.
