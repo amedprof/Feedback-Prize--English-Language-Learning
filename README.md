@@ -39,7 +39,7 @@ Build docker image from **Dockerfile**
 # Data
 In order to run the code, you will need to download the competition data and extract it in the **data** folder.
 
-# Train models
+# Training a model
 To run experiments : 
 
 For non deberta models :
