@@ -54,6 +54,11 @@ For deberta models :
 For 2xPooling models:
  1. you should use one of `configs/deberta-v3-large-2xpooling-paragraph.yaml` , `configs/deberta-v3-large-2xpooling-sentences.yaml` , `configs/deberta-v3-large-2xpooling-words.yaml`
  2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
+ 
+For non PyTorch models :
+ 1. run rapids-svr-cv-0-450.ipynb in src/model_zoo folder
+ 2. run tf-deberta-v3-base-cv-0-455.ipynb in src/model_zoo folder
+If you wish to only train PyTorch models, skip these two and set `NUM_MODELS = 22` in inference code.
 # Inference
 To reproduce our final score, run this [code](https://www.kaggle.com/code/cdeotte/3rd-place-solution-lb-0-4337-cv-0-4420) from kaggle kernels.
 
