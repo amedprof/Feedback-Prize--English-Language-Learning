@@ -56,8 +56,8 @@ For 2xPooling models:
  2. run `python train.py --config configs/deberta-v3-large-2xpooling-paragraph.yaml`
  
 For non PyTorch models :
- 1. run rapids-svr-cv-0-450.ipynb in src/model_zoo folder
- 2. run tf-deberta-v3-base-cv-0-455.ipynb in src/model_zoo folder
+ 1. run rapids-svr-cv-0-450.ipynb in `src/model_zoo folder`
+ 2. run tf-deberta-v3-base-cv-0-455.ipynb in `src/model_zoo folder`
  
 If you wish to only train PyTorch models, skip these two and set `NUM_MODELS = 22` in inference code.
 
