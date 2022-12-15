@@ -34,10 +34,10 @@ The solution write-up [Link](https://www.kaggle.com/competitions/feedback-prize-
 |24	              | deberta-v3-large	| 0.45 |
 
 # Install
-Build docker image from **Dockerfile**
+Build docker image from [Dockerfile](https://github.com/Amed1710/Feedback-Prize--English-Language-Learning/blob/main/Dockerfile)
 
 # Data
-In order to run the code, you will need to download the competition data and extract it in the **data** folder.
+In order to run the code, you will need to download the competition [data](https://www.kaggle.com/competitions/feedback-prize-english-language-learning/data) and extract it in the **data** folder.
 
 # Training a model
 To run experiments : 
